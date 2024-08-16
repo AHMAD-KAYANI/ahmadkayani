@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/efa88e04e6.js" crossorigin="anonymous"></script>
+   <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            font-size: 62.5%;
+        }
+        
+        body {
+            background-image: radial-gradient(circle 1292px at -13.6% 51.7%, rgba(0, 56, 68, 1) 0%, rgba(163, 217, 185, 1) 51.5%, rgba(255, 252, 247, 1) 88.6%);
+        }
+        
+        
+        /* ....................container body working.......... */
+        
+        .cn1 {
+            color: aliceblue;
+            /* width: 90%;
+            max-width: 1300px; */
+            height: 9vh;
+            display: flex;
+            justify-content: space-around;
+            gap: 6rem;
+            /* margin-left: 9rem; */
+            padding-left: 80px;
+            padding-right: 40px;
+        }
+        /* .................................navbar setting............. */
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /*...................left section setting..............*/
+        
+        
+        .leftContainer{
+            width: 56%;
+            height: 65vh;
+        }
+        
+        /* .............................navbar section starting.......... */
+        .navbar {
+            width: 70%;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: center;
+            gap: 5rem;
+            background-color: black;
+            padding-bottom: 1.5rem;
+            border: 3px solid white;
+            border-top: none;
+            border-radius: 2.5rem;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            margin-left: 9rem;
+        }
+        
+        .lists, a {
+            display: flex;
+            list-style: none;
+            text-decoration: none;
+            color: white;
+            padding-top: 1.5rem;
+            gap: 2rem;
+            position: relative; /* Ensure positioning context for the ::before pseudo-element */
+        }
+        
+        a {
+            font-size: 1.5rem;
+        }
+        
+        a::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: rgb(216, 215, 215);
+            transition: width 0.7s ease; 
+        }
+        
+        a:hover::before {
+            width: 110%; 
+        }
+        
+        a:hover {
+            color: aliceblue; 
+        }
+        
+        .left {
+           background-color: black;                             
+            border-radius: 2rem;
+            font-size: 2rem;
+          margin-top: 2rem;
+            height: 65vh;
+           display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        
+        
+        .a {
+            font-size: 3rem;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 2rem;
+            width: 56%;
+            background-color: black;
+            margin-top: 10rem;
+        
+        }
+        
+        .p1 {
+            word-spacing: 1rem;
+            margin-left: 5rem;
+        
+        
+        }
+        
+        .p2 {
+            font-size: 1.5rem;
+        
+            line-height: 3rem;
+            word-spacing: 1rem;
+        }
+        
+        span {
+            color: greenyellow;
+        }
+        
+        /*.........................button setting..................... */
+        
+        .btn1 {
+            background-color: black;
+            color: greenyellow;
+            border: 1px solid greenyellow;
+            border-radius: 6px;
+            padding: 4px;
+        }
+        
+        .btn2 {
+            background-color: greenyellow;
+            color: black;
+            border: 1px solid greenyellow;
+            border-radius: 6px;
+            padding: 3px;
+        }
+        
+        .btn1:hover {
+            color: white;
+            background-color: black;
+            transition: all 0.5s ease 0s;
+            padding: 2rem;
+            border: 3px solid white;
+        }
+        
+        .btn2:hover {
+            color: white;
+            background-color: black;
+            transition: all 0.5s ease 0s;
+            padding: 2rem;
+            border: 3px solid white;
+        }
+        
+        /*......................now the services part setting................*/
+        .p3,
+        h1 {
+            padding-top: 2rem;
+            text-align: center;
+        }
+        
+        .service {
+            width: 100%;
+            background-color: grey;
+            height: 74%;
+        }
+        
+        .boxes {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-top: 6rem;
+            align-items: flex-end;
+            gap: 2rem;
+            
+            
+            
+        
+        
+        }
+        
+        
+        .box2,
+        .box3 {
+            text-align: center;
+            padding: 1rem;
+            width: 25%;
+           
+           
+           
+            
+        
+        }
+        .box1{
+            width:28%;
+            text-align: center;
+            padding: 1rem;
+            
+           
+        }
+        
+        .s {
+            font-size: 2rem;
+        }
+        
+        
+        .p0{
+            font-size: 1rem;
+        }
+        
+        .box1 {
+            background-color: black;
+        }
+        
+        .box2 {
+            background-color: black;
+        }
+        
+        .box3 {
+            background-color: black;
+        }
+        
+        
+        
+        
+        
+        .b {
+           
+            border-radius: 2rem;
+            width: 44%;
+            background-color: black;
+        }
+        
+        .b {
+            background-image: url("./images/intro-img.png");
+            background-size: cover;
+            height: 100%;
+            
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /* ............................RIGHT SECTION STARTING........................ */
+        .right {
+          
+            font-size: 2rem;
+            width: 44%;
+            height: 120vh;
+            color: aliceblue;
+            background-color: black;
+            border-bottom: 2rem solid black;
+          
+        }
+        .h2{
+            text-align: center;
+            padding-top: 3rem;
+            font-size: 2.5rem;
+        }
+        .rightp{
+            text-align: center;
+            word-spacing: 1rem;
+            font-size: 2rem;
+        }
+        .btn3{
+            border:2px solid white;
+            border-radius: 2rem;
+            padding: .5rem;
+            color: black;
+            background-color: greenyellow;
+            
+        }
+        .btn3a{
+            border:2px solid white;
+            border-radius: .5rem;
+            color: greenyellow;
+            background-color: black;
+            
+        }
+        .btn3a:hover{
+            padding: 1rem;
+            color: black;
+            background-color: aliceblue;
+            transition: all 0.5s ease 0s;
+            padding: 2.5rem;
+        
+        }
+        .btn3:hover{
+            padding: 1rem;
+            color: aliceblue;
+            background-color: black;
+            transition: all 0.5s ease 0s;
+            padding: 2.5rem;
+        
+        }
+        
+        
+        
+        
+        
+        
+        .button-right{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-top: 1rem;
+            gap:1rem;
+          
+           
+        
+        }
+        
+        /* .................................picture section adding part................ */
+        
+        .picture{
+            margin-top: 2rem;
+            display:flex;
+            justify-content:space-around;
+            gap: 1rem;
+          padding-left: 2rem;
+          padding-right: 2rem;
+        }
+        .image1{
+           
+          
+           background-image:url("./images/profile1.jpg");
+           background-size: cover;
+        width: 100%;
+        height: 110px;
+        }
+        .image2{
+           
+           
+           background-image:url("./images/water\ and\ mountains.jpg");
+           background-size: cover;
+           width: 100%;
+        height: 110px;
+        
+        }
+        .image3{
+          
+           
+           background-image:url("./images/ali2.jpg");
+           background-size: cover;
+           width: 100%;
+           height: 110px;
+        }
+        .image4{
+          
+          
+           background-image:url("./images/moiz.jpg");
+           background-size: cover;
+           width: 100%;
+           height: 110px;
+        }
+        /* .................setting of the right section in which we can basically set the circle picture............. */
+        .circle{
+            margin-top: 2rem;
+            background-color:darkgrey;
+            height: 40%;
+           
+            
+            
+        }
+        .h1circle{
+            
+            text-align: center;
+        }
+        .image-circles{
+            display: flex;
+            justify-content: center;
+            gap: 5rem;
+        }
+        
+        .image5{
+            
+            background-image: url("./images/ahmad\ picture.jpeg");
+            position: relative;
+           
+        }
+        .image6{
+            background-image: url("./images/waleed.jpeg");
+            position: relative;
+        }
+        .image7{
+            background-image: url("./images/m2.jpeg");
+            position: relative;
+        }
+        .image5,.image7{
+            background-size: cover;
+           width: 22%;
+           height: 110px;
+           border: 3px solid black;
+           border-radius: 100%;
+        }
+        .image6{
+            background-size: cover;
+            width: 22%;
+            height: 110px;
+            border: 3px solid black;
+            border-radius: 100%;
+        
+        }
+        
+        /* ................circling part of right section after picture........... */
+        .image-circles{
+            display: flex;
+            justify-content: center;
+           
+            gap: 5rem;
+        }
+        
+        
+        .circle1{
+            border: 3px solid black;
+            border-radius: 100%;
+            font-size: 7px;
+        font-weight: 300;
+            background-color: darkslategrey;
+            color: aliceblue;
+            position: absolute;
+            top: 70px;
+            height: 70px;
+            width: 70px;
+            right: -35px;
+           
+           
+        }
+        .circle2{
+            border: 3px solid green;
+            border-radius: 100%;
+            font-size: 7px;
+        font-weight: 300;
+            background-color: darkred;
+            color: aliceblue;
+            position: absolute;
+           top:76px;
+        right: -20px;
+            height: 70px;
+            width: 70px;
+         
+          
+        }
+        .circle3{
+            border: 3px solid blue;
+            border-radius: 100%;
+            font-size: 7px;
+        font-weight: 300;
+            background-color:black;
+            color: aliceblue;
+            position: absolute;
+            top: 70px;
+            height: 70px;
+            width: 70px;
+            right: 2px;
+           
+        }
+        
+        /* ....................last footer part in their ...................... */
+        .footer{
+            display: flex;
+            padding-top: 1rem ;
+            justify-content: center;
+            background-color: green;
+        }
+        .last-image{
+            background-image: url("./images/profile1.jpg");
+            width:45px;
+            height: 45px;
+            background-size: cover;
+           
+            border-radius: 100%;
+            position: absolute;
+        }
+        .last-circle{
+           
+            border-radius: 100%;
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: greenyellow;
+            position: relative;
+            top: -15px;
+            right: -25px;
+        }
+        .ceo{
+            padding-top:4rem;
+            font-size: 2rem;
+            font-weight: 300;
+        }
+        .last-para{
+           
+            padding-top: 8rem;
+            font-size: 1rem;
+            text-align: center;
+            padding-right: 2rem;
+            padding-left:2rem;
+        }
+        .lastp{
+            border: 2px solid greenyellow;
+            border-radius: 2rem;
+           border-bottom: none;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            padding: 1rem;
+            background-color: black;
+        }
+        
+        
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <!----- ................................containeer1 starting...............-->
+    <div class="cn1">
+
+
+
+        <!--.....................left section starting..........-->
+
+        <div class="leftContainer">
+
+            <div class="navbar">
+              <h1 class="navbar-h1">
+                RAK
+              </h1>
+              <div class="lists">
+                <ul class="li"><a href="">HOME</a></ul>
+                <ul class="li"><a href="">LOGIN</a></ul>
+                <ul class="li"><a href="">SERVICE</a></ul>
+                <ul class="li"><a href="">ABOUT</a></ul>
+              </div>
+
+            </div>
+
+            <div class="left">
+                
+                
+                <div class="a">
+    
+                    <p class="p1"> Hi, I am web Dev</p>
+    
+                    <p class="p2">Know everything about <span>WEB </span></p>
+    
+                    <button class="btn1" type="button">SHOW PROFILE</button>
+                    <button class="btn2" type="button">KNOW MORE</button>
+    
+                </div>
+                <div class="b">
+    
+                </div>
+    
+                <div class="service">
+                    <h1> OUR SERVICES</h1>
+                    <p class="p3">ITS AHMAD KAYANI </p>
+    
+                    <div class="boxes">
+    
+                        <div class="box1">
+                            <i class="fa-regular fa-gem"></i>
+                            <h4 class="s">DEVOLPMENT</h4>
+                            <p class="p0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus facilis commodi
+                                quod ok go!</p>
+                        </div>
+    
+                        <div class="box2">
+                            <i class="fa-solid fa-earth-americas"></i>
+                            <h4 class="s">DESIGN</h5>
+                                <P class="p0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus facilis
+                                    commodi quod!</P>
+                        </div>
+    
+                        <div class="box3">
+                            <i class="fa-regular fa-heart"></i>
+                            <h4 class="s">SCO</h6>
+                                <P class="p0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias impedit
+                                    repellendus. </P>
+                        </div>
+    
+                    </div>
+    
+    
+                </div>
+            </div>
+        </div>
+      
+
+        <!--................left section ending..................-->
+
+<!---................right section starting...................-->
+        <div class="right">
+            <h2 class="h2">MY PROFILE</h2>
+            <p class="rightp">ALL RIGHT RESERVED</p>
+
+            <!--...................button setting  right section........-->
+
+            <div class="button-right">
+                <button class="btn3a" type="button">Design</button>
+                <button class="btn3" type="button">Graphics</button>
+                <button class="btn3a" type="button">Technology</button>
+                <button class="btn3" type="button">Others</button>
+            </div>
+
+
+            <!----..................picture adding in right section..............---->
+            <div class="picture">
+
+                <div class="image1"></div>
+                <div class="image2"></div>
+                <div class="image3"></div>
+                <div class="image4"></div>
+
+
+                <!-- ...........................picture section is ending now................. -->
+            </div>
+            <!-- .......................circling part is start................ -->
+            <div class="circle">
+
+                <h1 class="h1circle">Our Team</h1>
+
+                <!-- ....................right section image point of view ............  -->
+                <div class="image-circles">
+                    <div class="image5">
+                        <div class="circle1">
+                            <h1 class="g1"> Ahmad <br> kayani</h1>
+                        </div>
+                    </div>
+                    <div class="image6">
+                        <div class="circle2">
+                            <h1 class="g2">Waleed <br> Kayani</h1>
+                        </div>
+                    </div>
+                    <div class="image7">
+                        <div class="circle3">
+                            <h1 class="g3"> Moiz <br> Kayani</h1>
+                        </div>
+                    </div>
+                    <!-- ...........................right section image part is ending here now ........ -->
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="last-image">
+                    <div class="last-circle"></div>
+                    <h1 class="ceo">CEO</h1>
+                </div>
+            
+               <div class="last-para">
+                <P class="lastp">Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.</P>
+               </div> 
+            </div>
+
+            
+
+          
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <!---...........................container 1 ending..................-->
+    </div>
+
+
+
+  
+
+
+
+
+</body>
+
+</html>
